@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GPU Switcher
+Comment=Application description
+Icon=~/133-amd_social-512.png
+Exec=~/eGpuSwitcher/egpu-switcher.sh
+Terminal=false
+Categories=Tags;Describing;Application
