@@ -10,5 +10,19 @@ echo
 
 # check if the following files exist
 
-cp 20-amdgpu.conf /etc/X11/xorg.conf.d/20-amdgpu.conf
-cp blacklist.conf /etc/modprobe.d/blacklist.conf
+GPUCONF=/etc/X11/xorg.conf.d/20-amdgpu.conf
+if test -f "$GPUCONF"; 
+then
+    sudo rm /etc/X11/xorg.conf.d/20-amdgpu.conf
+else
+    sudo cp 20-amdgpu.conf /etc/X11/xorg.conf.d/20-amdgpu.conf
+fi
+
+BLKLIST=/etc/modprobe.d/blacklist.conf
+if test -f "$BLKLIST"; 
+then
+    sudo rm /etc/modprobe.d/blacklist.conf
+else
+    sudo cp blacklist.conf /etc/modprobe.d/blacklist.conf
+fi
+
