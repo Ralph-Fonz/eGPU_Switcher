@@ -26,3 +26,4 @@ else
     sudo cp blacklist.conf /etc/modprobe.d/blacklist.conf
 fi
 
+sudo reboot
