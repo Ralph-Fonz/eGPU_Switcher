@@ -15,7 +15,7 @@ if test -f "$GPUCONF";
 then
     sudo rm /etc/X11/xorg.conf.d/20-amdgpu.conf
 else
-    sudo cp 20-amdgpu.conf /etc/X11/xorg.conf.d/20-amdgpu.conf
+    sudo cp /home/ctrl_null/Repos/eGpuSwitcher/20-amdgpu.conf /etc/X11/xorg.conf.d/20-amdgpu.conf
 fi
 
 BLKLIST=/etc/modprobe.d/blacklist.conf
@@ -23,7 +23,7 @@ if test -f "$BLKLIST";
 then
     sudo rm /etc/modprobe.d/blacklist.conf
 else
-    sudo cp blacklist.conf /etc/modprobe.d/blacklist.conf
+    sudo cp /home/ctrl_null/Repos/eGpuSwitcher/blacklist.conf /etc/modprobe.d/blacklist.conf
 fi
 
-sudo reboot
+#sudo reboot
